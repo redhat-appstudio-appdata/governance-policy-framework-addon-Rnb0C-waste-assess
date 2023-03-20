@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: governance-policy-framework-addon-dfsa
+  namespace: red-hat-acm-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:74e9e2ded9dd59169a11976aafc4fd04872ea469823b5590f5419c81f34419c2
+        name: container-image
+        resources: {}
+status: {}
