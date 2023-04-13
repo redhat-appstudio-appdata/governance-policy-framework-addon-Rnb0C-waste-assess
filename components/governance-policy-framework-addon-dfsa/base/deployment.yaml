@@ -23,26 +23,12 @@ spec:
         app.kubernetes.io/instance: governance-policy-framework-addon-dfsa
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:5918033b1b91db8216028a6d2eb7237c8501a2df1e0bef0565a73d58202010f4
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1ae5be2f28517ac7fe464a84d0d04c1886b846bc3990438901906b49296458f1
         imagePullPolicy: Always
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 8080
-          initialDelaySeconds: 10
-          periodSeconds: 10
         name: container-image
         ports:
         - containerPort: 8080
-        readinessProbe:
-          initialDelaySeconds: 10
-          periodSeconds: 10
-          tcpSocket:
-            port: 8080
         resources:
-          limits:
-            cpu: "1"
-            memory: 512Mi
           requests:
             cpu: 10m
             memory: 50Mi
