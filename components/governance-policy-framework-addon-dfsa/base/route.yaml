@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: governance-policy-framework-addon-dfsa
     app.kubernetes.io/part-of: governance-policy-framework-addon
-  name: governance-policy-framewol8q7
+  name: governance-policy-framewok5dz
   namespace: red-hat-acm-tenant
 spec:
   port:
