@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: governance-policy-framework-addon-dfsa
     app.kubernetes.io/part-of: governance-policy-framework-addon
   name: governance-policy-framework-addon-dfsa
-  namespace: red-hat-acm-tenant
 spec:
   ports:
   - port: 8080
